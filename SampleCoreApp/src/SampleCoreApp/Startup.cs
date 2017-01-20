@@ -15,6 +15,8 @@ namespace SampleCoreApp
 
         #endregion Public Fields
 
+        #region Public Constructors
+
         public Startup(IHostingEnvironment env)
         {
             Configuration = new ConfigurationBuilder()
@@ -22,6 +24,8 @@ namespace SampleCoreApp
                 .AddJsonFile("appsettings.json")
                 .Build();
         }
+
+        #endregion Public Constructors
 
         #region Public Methods
 
@@ -35,7 +39,6 @@ namespace SampleCoreApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-
             loggerFactory.AddConsole();
 
             if (env.IsDevelopment())
@@ -44,9 +47,8 @@ namespace SampleCoreApp
             }
 
             //app.UseFileServer();
-            app.Run( async context =>
-            await context.Response.WriteAsync($"Hello {env.EnvironmentName} it's {Configuration["message"]}"));
-
+            app.Run(async context =>
+           await context.Response.WriteAsync($"Hello {env.EnvironmentName} it's {Configuration["message"]}; SampleGreeting message: {SampleLib.Class1.Greeting()}"));
         }
 
         #endregion Public Methods

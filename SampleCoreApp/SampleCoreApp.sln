@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SampleCoreApp", "src\SampleCoreApp\SampleCoreApp.xproj", "{7079C06B-DA6C-4760-B7FA-C6ED98FA846A}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SampleLib", "src\SampleLib\SampleLib.xproj", "{F912451D-AA10-4F9C-85AA-A8400B3065EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +24,16 @@ Global
 		{7079C06B-DA6C-4760-B7FA-C6ED98FA846A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7079C06B-DA6C-4760-B7FA-C6ED98FA846A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7079C06B-DA6C-4760-B7FA-C6ED98FA846A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F912451D-AA10-4F9C-85AA-A8400B3065EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F912451D-AA10-4F9C-85AA-A8400B3065EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F912451D-AA10-4F9C-85AA-A8400B3065EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F912451D-AA10-4F9C-85AA-A8400B3065EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7079C06B-DA6C-4760-B7FA-C6ED98FA846A} = {88BF604D-9AB8-42D1-9836-689416AC0368}
+		{F912451D-AA10-4F9C-85AA-A8400B3065EB} = {88BF604D-9AB8-42D1-9836-689416AC0368}
 	EndGlobalSection
 EndGlobal
